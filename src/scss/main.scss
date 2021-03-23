@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+@import 'variables';
+
+
+/* BASE */
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $gray-1;
+  background-image: $gradient-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

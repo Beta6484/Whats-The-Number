@@ -1,3 +1,4 @@
+import Container from './components/container';
 import './scss/main.scss';
 
-console.log("Hello World")
+new Container();

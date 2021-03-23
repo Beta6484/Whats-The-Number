@@ -1,0 +1,17 @@
+@import '../../scss/variables';
+
+.title {
+  text-transform: uppercase;
+  background: $gradient-orange;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: $gray-2;
+    margin: .8rem 6% 0;
+  }
+}
