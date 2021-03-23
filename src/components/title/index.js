@@ -7,6 +7,7 @@ export default class Title {
     this.el.innerHTML = 'Qual é o número?';
   }
 
+  // Retornando o elemento
   el() {
     return this.el;
   }

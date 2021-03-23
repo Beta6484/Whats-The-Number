@@ -1,8 +1,8 @@
-@import '../../scss/variables';
+@import '../../scss/helpers';
 
 .title {
   text-transform: uppercase;
-  background: $gradient-orange;
+  background: $gradient-txt;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;

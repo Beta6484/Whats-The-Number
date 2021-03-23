@@ -3,10 +3,33 @@
 $gray-1: #EEEEEE;
 $gray-2: #CFCFCF;
 $white: #FFFFFF;
-$orange: #EF6C00;
+$orange: #FF6600;
+$light-orange: #EF6C00;
 $dark-orange: #DB6300;
+$darker-orange: #C0661C;
+$red: #CC3300;
+$text: #222222;
 
 
 /* GRADIENTS */
+
 $gradient-bg: linear-gradient(180deg, $gray-1 0%, $white 100%);
-$gradient-orange: linear-gradient(174.92deg, $orange 18.47%, $dark-orange 36.57%);
+$gradient-txt: linear-gradient(174.92deg, $light-orange 18.47%, $dark-orange 36.57%);
+$gradient-btn: linear-gradient(180deg, $light-orange 0%, $darker-orange 100%);
+
+
+/* VALUES */
+
+$border-radius: 4px;
+
+
+/* RESPONSIVE BREAKPOINTS */
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
