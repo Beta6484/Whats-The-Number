@@ -3,6 +3,8 @@
 $gray-1: #EEEEEE;
 $gray-2: #CFCFCF;
 $gray-3: #DDDDDD;
+$gray-4: #9E9E9E;
+$gray-5: #434854;
 $white: #FFFFFF;
 $orange-1: #FF6600;
 $orange-2: #EF6C00;
@@ -11,6 +13,7 @@ $orange-4: #C0661C;
 $success: #32BF00;
 $error: #CC3300;
 $text: #222222;
+$digit: #262A34;
 
 
 /* GRADIENTS */
@@ -18,6 +21,7 @@ $text: #222222;
 $gradient-bg: linear-gradient(180deg, $gray-1 0%, $white 100%);
 $gradient-txt: linear-gradient(174.92deg, $orange-2 18.47%, $orange-3 36.57%);
 $gradient-btn: linear-gradient(180deg, $orange-2 0%, $orange-4 100%);
+$gradient-sec: linear-gradient(180deg, $gray-5 0%, $gray-4 100%);
 
 
 /* VALUES */

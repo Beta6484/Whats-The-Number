@@ -2,9 +2,7 @@ import Watcher from '../../services/watcher';
 import './style.scss';
 
 export default class Form {
-  constructor(
-    disable = false
-  ) {
+  constructor() {
     this.el = document.createElement('form');
     this.fields = document.createElement('div');
     this.input = document.createElement('input');
@@ -17,10 +15,8 @@ export default class Form {
     this.input.classList.add('form__input');
     this.input.setAttribute('type', 'number');
     this.input.setAttribute('placeholder', 'Digite o palpite');
-    this.input.disabled = disable;
     this.button.classList.add('form__button');
     this.button.setAttribute('type', 'submit');
-    this.button.disabled = disable;
     this.button.innerHTML = 'Enviar';
     this.error.classList.add('form__error');
 
@@ -66,6 +62,7 @@ export default class Form {
     if(message) {
       this.error.innerHTML = message;
       this.el.insertBefore(this.error, this.fields);
+      this.el.reset();
     } else {
       if(this.el.querySelector('.form__error')) {
         this.el.removeChild(this.error);
@@ -77,6 +74,7 @@ export default class Form {
   submit() {
     if(this.validate()) {
       this.watcher.set(this.val);
+      this.el.reset();
     }
   }
 }

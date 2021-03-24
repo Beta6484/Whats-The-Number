@@ -8,6 +8,10 @@
     path {
       fill: $gray-3;
     }
+
+    &:not(:first-of-type) {
+      margin-left: .8rem;
+    }
   
     &.zero {
       .digit__top,
@@ -16,14 +20,30 @@
       .digit__bottomLeft,
       .digit__bottomRight,
       .digit__bottom {
-        fill: $success;
+        fill: $digit;
+
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   
     &.one {
       .digit__topRight,
       .digit__bottomRight {
-        fill: $success;
+        fill: $digit;
+        
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   
@@ -33,7 +53,15 @@
       .digit__middle,
       .digit__bottomLeft,
       .digit__bottom {
-        fill: $success;
+        fill: $digit;
+        
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   
@@ -43,7 +71,15 @@
       .digit__middle,
       .digit__bottomRight,
       .digit__bottom {
-        fill: $success;
+        fill: $digit;
+        
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   
@@ -52,7 +88,15 @@
       .digit__topRight,
       .digit__middle,
       .digit__bottomRight {
-        fill: $success;
+        fill: $digit;
+        
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   
@@ -62,7 +106,15 @@
       .digit__middle,
       .digit__bottomRight,
       .digit__bottom {
-        fill: $success;
+        fill: $digit;
+        
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   
@@ -73,7 +125,15 @@
       .digit__bottomLeft,
       .digit__bottomRight,
       .digit__bottom {
-        fill: $success;
+        fill: $digit;
+        
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   
@@ -81,7 +141,15 @@
       .digit__top,
       .digit__topRight,
       .digit__bottomRight {
-        fill: $success;
+        fill: $digit;
+        
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   
@@ -93,7 +161,15 @@
       .digit__bottomLeft,
       .digit__bottomRight,
       .digit__bottom {
-        fill: $success;
+        fill: $digit;
+        
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   
@@ -104,7 +180,15 @@
       .digit__middle,
       .digit__bottomRight,
       .digit__bottom {
-        fill: $success;
+        fill: $digit;
+        
+        .success & {
+          fill: $success;
+        }
+
+        .error & {
+          fill: $error;
+        }
       }
     }
   }

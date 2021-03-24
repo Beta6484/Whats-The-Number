@@ -1,6 +1,51 @@
+@import '../../scss/helpers';
+
 .display {
-  &__digits {
-    display: flex;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 0;
+
+  &__message {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.3333rem;
+    color: $orange-1;
+    text-align: center;
+    top: 1.3rem;
+  }
+
+  &__reset {
+    position: absolute;;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+    background: $gradient-sec;
+    padding: 1.16666rem 1rem;
+    border-radius: $border-radius;
+    border: none;
+    bottom: -3rem;
+
+    i {
+      margin-right: .8rem;
+    }
+  }
+
+  &.success {
+    .display__message {
+      color: $success;
+    }
+  }
+
+  &.error {
+    .display__message {
+      color: $error;
+      text-transform: uppercase;
+    }
   }
 }
