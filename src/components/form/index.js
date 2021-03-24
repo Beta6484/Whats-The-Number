@@ -1,3 +1,4 @@
+import Watcher from '../../services/watcher';
 import './style.scss';
 
 export default class Form {
@@ -31,6 +32,8 @@ export default class Form {
       evt.preventDefault();
       this.submit();
     });
+
+    this.watcher = new Watcher();
   }
 
   // Retornando o elemento
@@ -64,14 +67,16 @@ export default class Form {
       this.error.innerHTML = message;
       this.el.insertBefore(this.error, this.fields);
     } else {
-      this.el.removeChild(this.error);
+      if(this.el.querySelector('.form__error')) {
+        this.el.removeChild(this.error);
+      }
     }
   }
 
   // Enviando o valor
   submit() {
     if(this.validate()) {
-      console.log(this.val)
+      this.watcher.set(this.val);
     }
   }
 }

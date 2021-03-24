@@ -2,20 +2,22 @@
 
 $gray-1: #EEEEEE;
 $gray-2: #CFCFCF;
+$gray-3: #DDDDDD;
 $white: #FFFFFF;
-$orange: #FF6600;
-$light-orange: #EF6C00;
-$dark-orange: #DB6300;
-$darker-orange: #C0661C;
-$red: #CC3300;
+$orange-1: #FF6600;
+$orange-2: #EF6C00;
+$orange-3: #DB6300;
+$orange-4: #C0661C;
+$success: #32BF00;
+$error: #CC3300;
 $text: #222222;
 
 
 /* GRADIENTS */
 
 $gradient-bg: linear-gradient(180deg, $gray-1 0%, $white 100%);
-$gradient-txt: linear-gradient(174.92deg, $light-orange 18.47%, $dark-orange 36.57%);
-$gradient-btn: linear-gradient(180deg, $light-orange 0%, $darker-orange 100%);
+$gradient-txt: linear-gradient(174.92deg, $orange-2 18.47%, $orange-3 36.57%);
+$gradient-btn: linear-gradient(180deg, $orange-2 0%, $orange-4 100%);
 
 
 /* VALUES */

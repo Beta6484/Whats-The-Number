@@ -1,0 +1,119 @@
+@import '../../scss/helpers';
+
+.digits {
+  &__digit {
+    width: auto;
+    height: 100px;
+  
+    path {
+      fill: $gray-3;
+    }
+  
+    &.zero {
+      .digit__top,
+      .digit__topLeft,
+      .digit__topRight,
+      .digit__bottomLeft,
+      .digit__bottomRight,
+      .digit__bottom {
+        fill: $success;
+      }
+    }
+  
+    &.one {
+      .digit__topRight,
+      .digit__bottomRight {
+        fill: $success;
+      }
+    }
+  
+    &.two {
+      .digit__top,
+      .digit__topRight,
+      .digit__middle,
+      .digit__bottomLeft,
+      .digit__bottom {
+        fill: $success;
+      }
+    }
+  
+    &.three {
+      .digit__top,
+      .digit__topRight,
+      .digit__middle,
+      .digit__bottomRight,
+      .digit__bottom {
+        fill: $success;
+      }
+    }
+  
+    &.four {
+      .digit__topLeft,
+      .digit__topRight,
+      .digit__middle,
+      .digit__bottomRight {
+        fill: $success;
+      }
+    }
+  
+    &.five {
+      .digit__top,
+      .digit__topLeft,
+      .digit__middle,
+      .digit__bottomRight,
+      .digit__bottom {
+        fill: $success;
+      }
+    }
+  
+    &.six {
+      .digit__top,
+      .digit__topLeft,
+      .digit__middle,
+      .digit__bottomLeft,
+      .digit__bottomRight,
+      .digit__bottom {
+        fill: $success;
+      }
+    }
+  
+    &.seven {
+      .digit__top,
+      .digit__topRight,
+      .digit__bottomRight {
+        fill: $success;
+      }
+    }
+  
+    &.eight {
+      .digit__top,
+      .digit__topLeft,
+      .digit__topRight,
+      .digit__middle,
+      .digit__bottomLeft,
+      .digit__bottomRight,
+      .digit__bottom {
+        fill: $success;
+      }
+    }
+  
+    &.nine {
+      .digit__top,
+      .digit__topLeft,
+      .digit__topRight,
+      .digit__middle,
+      .digit__bottomRight,
+      .digit__bottom {
+        fill: $success;
+      }
+    }
+  }
+}
+
+@include media-breakpoint(sm) {
+  .digits {
+    &__digit {
+      height: 135px;
+    }
+  }
+}

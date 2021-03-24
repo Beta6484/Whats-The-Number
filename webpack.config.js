@@ -11,14 +11,13 @@ module.exports = {
 
   output: {
     path: path.resolve('dist'),
-    filename: 'main.bundle.js',
+    filename: 'main.bundle.js'
   },
 
   devtool: (process.env.NODE_ENV !== 'production') && 'inline-source-map',
 
   devServer: {
     compress: true,
-    contentBase: path.join(__dirname, 'dist'),
     writeToDisk: true,
     watchContentBase: true,
     port: 3000,
@@ -89,7 +88,7 @@ module.exports = {
             },
           },
         ],
-      },
+      }
     ]
   }
 }

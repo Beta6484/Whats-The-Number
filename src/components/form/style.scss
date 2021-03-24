@@ -1,6 +1,7 @@
 @import '../../scss/helpers';
 
 .form {
+  position: relative;
   width: 100%;
 
   &__fields {
@@ -16,7 +17,7 @@
     color: $text;
     margin-right: 1rem;
     padding: 1.16666rem 1rem;
-    border: solid 1px $orange;
+    border: solid 1px $orange-1;
     border-radius: $border-radius;
   }
 
@@ -32,10 +33,11 @@
   }
 
   &__error {
+    position: absolute;
     display: block;
     font-size: .9rem;
-    color: $red;
-    margin-bottom: .6rem;
+    color: $error;
+    top: -1.6rem;
   }
 }
 

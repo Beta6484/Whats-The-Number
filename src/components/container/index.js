@@ -1,3 +1,4 @@
+import Display from '../display';
 import Form from '../form';
 import Title from '../title';
 import './style.scss';
@@ -18,14 +19,11 @@ export default class Container {
   // Montagem da view
   initialize() {
     this.appTitle = new Title();
+    this.display = new Display();
     this.form = new Form();
 
-    this.appendChild(this.appTitle.el);
-    this.appendChild(this.form.el);
-  }
-
-  // Adicionando elementos a view
-  appendChild(element) {
-    this.container.appendChild(element);
+    this.container.appendChild(this.appTitle.el);
+    this.container.appendChild(this.display.el);
+    this.container.appendChild(this.form.el);
   }
 }
